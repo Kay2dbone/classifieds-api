@@ -1,0 +1,28 @@
+{
+  "name": "classifieds-api",
+  "version": "1.0.0",
+  "description": "Modern classifieds API based on CL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeloopy/classifieds-api.git"
+  },
+  "author": "Codeloopy and AvinashDhillor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeloopy/classifieds-api/issues"
+  },
+  "homepage": "https://github.com/codeloopy/classifieds-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.0",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.19",
+    "validator": "^10.11.0"
+  }
+}
