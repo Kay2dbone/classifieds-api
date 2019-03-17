@@ -15,5 +15,11 @@ npm run start
 ### For dev server
 
 ```
-npm i nodemon -g && npm run server
+npm run server
+```
+
+### Test modules
+
+```
+npm run test
 ```
