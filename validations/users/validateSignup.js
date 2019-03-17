@@ -6,14 +6,20 @@ module.exports = validateSignup = data => {
 
   if (_.isEmpty(data.email)) {
     errors.email = 'Email is required';
+  } else if (!validator.isEmail(data.email)) {
+    errors.email = 'Email is invalid';
   }
 
   if (_.isEmpty(data.password)) {
     errors.password = 'Password is required';
   }
 
-  if (!validator.isEmail(data.email)) {
-    errors.email = 'Email is invalid';
+  if (_.isEmpty(data.confirmPassword)) {
+    errors.confirmPassword = 'Confirm password is required';
+  }
+
+  if (errors.confirmPassword !== errors.password) {
+    errors.password = 'Password should match';
   }
 
   return {
