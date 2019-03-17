@@ -4,6 +4,8 @@
   "description": "Modern classifieds API based on CL",
   "main": "app.js",
   "scripts": {
+    "test": "mocha \"./{,!(node_modules)/**/}*.test.js\"",
+    "test-watch": "nodemon --exec \"npm test\"",
     "start": "node server.js",
     "server": "nodemon server.js"
   },
@@ -26,5 +28,10 @@
     "mongodb": "^3.1.13",
     "mongoose": "^5.4.19",
     "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "expect": "^24.5.0",
+    "mocha": "^6.0.2",
+    "supertest": "^4.0.2"
   }
 }
